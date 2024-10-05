@@ -9,15 +9,17 @@ import lombok.experimental.FieldDefaults;
 import java.util.UUID;
 
 @Entity
-@Table(name = "Theater")
+@Table(name = "Authority")
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @NoArgsConstructor
-public class Theater {
+public class Authority {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    UUID theaterId;
+    UUID authorityId;
 
+    @Column(name = "authoriryName")
+    String authorityName;
 
 }

@@ -2,22 +2,20 @@ package com.example.backend.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
 import java.util.UUID;
 
 @Entity
-@Table(name = "Theater")
-@Data
+@Table(name = "Showtime")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @NoArgsConstructor
-public class Theater {
+public class Showtime {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    UUID theaterId;
+    UUID showTimeId;
 
 
 }
